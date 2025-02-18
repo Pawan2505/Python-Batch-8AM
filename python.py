@@ -463,3 +463,118 @@ for var in sequence:
 # for i in range(1,11) :
 #   if i%2 == 0:
 #     print(i)
+
+
+# format() method
+
+# a = 5
+# b = 3
+# c = a + b
+
+# positional substitution
+# print("Addition of {} and {} is {}".format(a, b, c))
+# print("Addition of {a} and {b} is {c}".format(a, b, c))  # Not ok
+
+# index-based substitution
+# print("Addition of {1} and {0} is {2}".format(a, b, c))
+
+# keyword-based substitution
+# print("Addition of {num1} and {num2} is {ans}".format(num1=a, num2=b, ans=c))
+
+
+
+# Float Precision with the format() Method
+
+'''
+Syntax:
+{[index]:[width][.precision][type]}
+'''
+
+'''
+The type can be used with format codes:
+
+'d' for integers
+'f' for floating-point numbers
+'s' for string
+'''
+
+# pi  = 3123.141592
+
+# print('The value of pi is: %.2f' %pi)
+# print('The value of pi is: {0:1.2f}'.format(pi))
+
+# % operator
+
+# a = 5.5
+# b = 3
+# c = a + b
+
+# print("Addition of %.1f and %d is %.2f" %(a, b, c))
+
+
+# f-string
+
+# a = 5
+# b = 3
+# c = a + b
+
+# print(f"Addition of {a} and {b} is {c}")
+
+
+# Indexing
+
+'''
+Syntax: variable[index]
+'''
+
+# name = "Python"
+# print(name[0])   # P
+# print(name[-2])  # o
+
+# fruits = ["apple", "banana", "charry", "mango"]
+# print(fruits[2]) # charry
+# print(fruits[-1]) # mango
+
+# grades = ("A", "B", "C", "F")
+# print(grades[1]) # B
+# print(grades[-1]) # B
+
+# print(grades[0,1,2,3])
+
+# for item in grades :
+#   print(item)
+
+
+# Slicing
+
+'''
+Syntax: variable[start:end:step]
+'''
+
+'''
+Note:
+- step value is 1 by deault.
+- end value is by default set to the length of a given variable.
+'''
+
+# name = "Python"
+# print(name[0:2])    # Py
+# print(name[1:2])    # Py
+# print(name[0:2:1])  # Py
+# print(name[0:5:2])  # Pto
+
+# print(name[:])      # Python
+# print(name[::])     # Python
+
+# print(name[::-1])   # nohtyP
+
+# print(name[::2])    # Pto
+
+
+# import timeit
+
+# list_time = timeit.timeit(stmt="[x+1 for x in my_list]", setup="my_list = [1,2,3,4,5]", number=1000000)
+# array_time = timeit.timeit(stmt="[x+1 for x in my_array]", setup="import array; my_array = array.array('i', [1,2,3,4,5])", number=1000000)
+
+# print("List Time:", list_time)
+# print("Array Time:", array_time)
