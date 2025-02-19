@@ -201,18 +201,18 @@ print(name)  # Output: 'abc'
 # 3. Tuple - Ordered, immutable
 # 4. Frozenset - Immutable version of set
 
-# ✅ List - Mutable (Can be modified)
-l = ["Pawan", 1, 3, 56, 78, 90]
-print(l)
+# # ✅ List - Mutable (Can be modified)
+# l = ["Pawan", 1, 3, 56, 78, 90]
+# print(l)
 
-l[3] = 100  # Modifying an element
-print(l)  # Output: ['Pawan', 1, 3, 100, 78, 90]
+# l[3] = 100  # Modifying an element
+# print(l)  # Output: ['Pawan', 1, 3, 100, 78, 90]
 
-# ✅ Set - Unordered, unique elements, removes duplicates
-s = {12, 34, 678, 90, "pawan", 12}  # Duplicate 12 will be removed
-print(s)  # Output: {34, 12, 90, 'pawan', 678} (order may vary)
+# # ✅ Set - Unordered, unique elements, removes duplicates
+# s = {12, 34, 678, 90, "pawan", 12}  # Duplicate 12 will be removed
+# print(s)  # Output: {34, 12, 90, 'pawan', 678} (order may vary)
 
-"""
+# """
 ==========================================
   🎯 Summary:
 ==========================================
@@ -387,6 +387,9 @@ print(s)  # Output: {34, 12, 90, 'pawan', 678} (order may vary)
 
 #set -> unique , remove dublicate
 
-# s = {12,34,678,90,"pawan",12}
+s = {12,34,678,90,"pawan",12}
+s[1] = 23
+print(s) 
 
-# print(s) 
+#tuple 
+
